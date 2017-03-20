@@ -3,8 +3,8 @@ Nombre de la tarea: Tarea 4 PSP2
 Nombre del estudiante: Javier Hernando Mesa Losada
 Fecha de envío de la tarea: 19-03-2017
 Instrucciones para descargar el codigo fuente desde GitHub: git clone https://github.com/jhmesa/psp2-program-4.git
-Instrucciones para probar el programa en heroku: Ingrese en el navegador la url https://program4.herokuapp.com/
-Instrucciones para compilar el codigo fuente: Ejecute el comando mvn package desde psp2-program-4/calculation/<nombre_archivo>
+Instrucciones para probar el programa en heroku: Ingrese en el navegador la url https://program4.herokuapp.com/calculation/<nombre_archivo>
+Instrucciones para compilar el codigo fuente: Ejecute el comando mvn package desde psp2-program-4
 Instrucciones para desplegar la aplicación localmente:  Ejecute el comando heroku local web desde psp2-program-4
 Instrucciones para ejecutar el programa: Ingrese en el navegador la url localhost:5000/calculation/<nombre_archivo>
 										 Ejemplo: localhost:5000/calculation/data_test_1.txt
