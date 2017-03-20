@@ -2,9 +2,10 @@ Código y nombre del curso: CSOF 5101 CONCEPTOS AVANZADOS EN INGENIERÍA DE SOFT
 Nombre de la tarea: Tarea 4 PSP2
 Nombre del estudiante: Javier Hernando Mesa Losada
 Fecha de envío de la tarea: 19-03-2017
-Intrucciones para descargar el codigo fuente desde GitHub: git clone https://github.com/jhmesa/psp2-program-4.git
-Instrucciones para compilar el codigo fuente: Ejecute el comando mvn package desde psp2-program-4
-Instrucciones para desplegar la aplicación:  Ejecute el comando heroku local web desde psp2-program-4
+Instrucciones para descargar el codigo fuente desde GitHub: git clone https://github.com/jhmesa/psp2-program-4.git
+Instrucciones para probar el programa en heroku: Ingrese en el navegador la url https://program4.herokuapp.com/
+Instrucciones para compilar el codigo fuente: Ejecute el comando mvn package desde psp2-program-4/calculation/<nombre_archivo>
+Instrucciones para desplegar la aplicación localmente:  Ejecute el comando heroku local web desde psp2-program-4
 Instrucciones para ejecutar el programa: Ingrese en el navegador la url localhost:5000/calculation/<nombre_archivo>
 										 Ejemplo: localhost:5000/calculation/data_test_1.txt
 										 El archivo debe contener en cada registro dos números reales separados por el delimitador "," y cada registro o fila debe estar con el delimitador de salto de linea.
