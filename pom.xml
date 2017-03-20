@@ -15,28 +15,40 @@
       <artifactId>spark-template-freemarker</artifactId>
       <version>2.0.0</version>
     </dependency>
-  </dependencies>
-  
-  <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
+	<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies> 
+  <reporting>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.10.1</version>
+            <configuration />
+         </plugin>
+      </plugins>
+   </reporting>  
+  <build>  
+     <plugins>
+	   <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.10.1</version>
+            <configuration />
+       </plugin>
       <plugin>
-		  <groupId>com.heroku.sdk</groupId>
-		  <artifactId>heroku-maven-plugin</artifactId>
-		  <version>0.5.1</version>
-		  <configuration>
-		    <appName>program4</appName>
-		    <processTypes>
-		     <web>java $JAVA_OPTS -cp target/classes:target/dependency/* LaunchProgram4</web>
-		    </processTypes>
-		  </configuration>
-	  </plugin>
-      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.1</version>
+        <version>2.5.1</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+          <optimize>true</optimize>
+          <debug>true</debug>
         </configuration>
       </plugin>
       <plugin>
@@ -50,7 +62,7 @@
           <appendAssemblyId>false</appendAssemblyId>
           <archive>
             <manifest>
-              <mainClass>LaunchProgram4</mainClass>
+              <mainClass>co.edu.uniandes.ecos.csof5101.psp2.controller.LaunchProgram4</mainClass>
             </manifest>
           </archive>
         </configuration>

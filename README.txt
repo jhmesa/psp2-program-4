@@ -1,10 +1,13 @@
 Código y nombre del curso: CSOF 5101 CONCEPTOS AVANZADOS EN INGENIERÍA DE SOFTWARE
-Nombre de la tarea: Tarea 3 PSP2
+Nombre de la tarea: Tarea 4 PSP2
 Nombre del estudiante: Javier Hernando Mesa Losada
-Fecha de envío de la tarea: 08-03-2017
-Intrucciones para descargar el codigo fuente desde GitHub: git clone https://github.com/jhmesa/psp2.git
-Instrucciones para compilar el codigo fuente: Ejecute el comando mvn package desde psp2
-Instrucciones para ejecutar el programa: Ejecute el programa desde target/ utilizando el comando: java -cp psp2-v_1.0-jar-with-dependencies.jar co.edu.uniandes.ecos.csof5101.psp2.controller.LaunchProgram3 <path_file>
-										 Luego ingrese por consola el valor del proxy estimado.
+Fecha de envío de la tarea: 19-03-2017
+Intrucciones para descargar el codigo fuente desde GitHub: git clone https://github.com/jhmesa/psp2-program-4.git
+Instrucciones para compilar el codigo fuente: Ejecute el comando mvn package desde psp2-program-4
+Instrucciones para desplegar la aplicación:  Ejecute el comando heroku local web desde psp2-program-4
+Instrucciones para ejecutar el programa: Ingrese en el navegador la url localhost:5000/calculation/<nombre_archivo>
+										 Ejemplo: localhost:5000/calculation/data_test_1.txt
 										 El archivo debe contener en cada registro dos números reales separados por el delimitador "," y cada registro o fila debe estar con el delimitador de salto de linea.
-										 Ejemplo: java -cp psp2-v_1.0-jar-with-dependencies.jar co.edu.uniandes.ecos.csof5101.psp2.controller.LaunchProgram3 C:\directorioJava
+										 Si el archivo contiene datos de LOC, el primer elemento de cada registro es el LOC y el segundo el número de metodos.
+										 Si el archivo contiene datos de Páginas, el primer elemento es el número de páginas y el segundo siempre es 1.
+										

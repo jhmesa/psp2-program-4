@@ -13,18 +13,27 @@ import java.util.List;
  * 
  * @author Javier Mesa
  * @version 1.0
- * @since 05/03/2017 04:58:29 PM 2017
+ * @since 19/03/2017 04:58:29 PM 2017
  */
 public class Data {
 	
 	//Instance variables
 	private List<Double> dataXList = new ArrayList<Double>();
 	private List<Double> dataYList = new ArrayList<Double>();
-	private double linearRegressionParam1;
-	private double linearRegressionParam2;
-	private double correlationCoefficient1;
-	private double correlationCoefficient2;
-	private double improvedPrediction;
+	private double naturalLogarithmSum;
+	private double average;
+	private double variance;
+	private double standardDeviation;
+	private double lnVS;
+	private double lnS;
+	private double lnM;
+	private double lnL;
+	private double lnVL;
+	private double VS;
+	private double S;
+	private double M;
+	private double L;
+	private double VL;
 	
 	/**
 	 * @return the dataXList
@@ -55,72 +64,198 @@ public class Data {
 	}
 	
 	/**
-	 * @return the linearRegressionParam1
+	 * @return the naturalLogarithmSum
 	 */
-	public double getLinearRegressionParam1() {
-		return linearRegressionParam1;
+	public double getNaturalLogarithmSum() {
+		return naturalLogarithmSum;
 	}
 	
 	/**
-	 * @param linearRegressionParam1 the linearRegressionParam1 to set
+	 * @param naturalLogarithmSum the naturalLogarithmSum to set
 	 */
-	public void setLinearRegressionParam1(double linearRegressionParam1) {
-		this.linearRegressionParam1 = linearRegressionParam1;
+	public void setNaturalLogarithmSum(double naturalLogarithmSum) {
+		this.naturalLogarithmSum = naturalLogarithmSum;
 	}
 	
 	/**
-	 * @return the linearRegressionParam2
+	 * @return the average
 	 */
-	public double getLinearRegressionParam2() {
-		return linearRegressionParam2;
+	public double getAverage() {
+		return average;
 	}
 	
 	/**
-	 * @param linearRegressionParam2 the linearRegressionParam2 to set
+	 * @param average the average to set
 	 */
-	public void setLinearRegressionParam2(double linearRegressionParam2) {
-		this.linearRegressionParam2 = linearRegressionParam2;
+	public void setAverage(double average) {
+		this.average = average;
 	}
 	
 	/**
-	 * @return the correlationCoefficient1
+	 * @return the variance
 	 */
-	public double getCorrelationCoefficient1() {
-		return correlationCoefficient1;
+	public double getVariance() {
+		return variance;
 	}
 	
 	/**
-	 * @param correlationCoefficient1 the correlationCoefficient1 to set
+	 * @param variance the variance to set
 	 */
-	public void setCorrelationCoefficient1(double correlationCoefficient1) {
-		this.correlationCoefficient1 = correlationCoefficient1;
+	public void setVariance(double variance) {
+		this.variance = variance;
 	}
 	
 	/**
-	 * @return the correlationCoefficient2
+	 * @return the standardDeviation
 	 */
-	public double getCorrelationCoefficient2() {
-		return correlationCoefficient2;
+	public double getStandardDeviation() {
+		return standardDeviation;
 	}
 	
 	/**
-	 * @param correlationCoefficient2 the correlationCoefficient2 to set
+	 * @param standardDeviation the standardDeviation to set
 	 */
-	public void setCorrelationCoefficient2(double correlationCoefficient2) {
-		this.correlationCoefficient2 = correlationCoefficient2;
+	public void setStandardDeviation(double standardDeviation) {
+		this.standardDeviation = standardDeviation;
 	}
 	
 	/**
-	 * @return the improvedPrediction
+	 * @return the lnVS
 	 */
-	public double getImprovedPrediction() {
-		return improvedPrediction;
+	public double getLnVS() {
+		return lnVS;
 	}
 	
 	/**
-	 * @param improvedPrediction the improvedPrediction to set
+	 * @param lnVS the lnVS to set
 	 */
-	public void setImprovedPrediction(double improvedPrediction) {
-		this.improvedPrediction = improvedPrediction;
+	public void setLnVS(double lnVS) {
+		this.lnVS = lnVS;
 	}
+	
+	/**
+	 * @return the lnS
+	 */
+	public double getLnS() {
+		return lnS;
+	}
+	
+	/**
+	 * @param lnS the lnS to set
+	 */
+	public void setLnS(double lnS) {
+		this.lnS = lnS;
+	}
+	
+	/**
+	 * @return the lnM
+	 */
+	public double getLnM() {
+		return lnM;
+	}
+	
+	/**
+	 * @param lnM the lnM to set
+	 */
+	public void setLnM(double lnM) {
+		this.lnM = lnM;
+	}
+	
+	/**
+	 * @return the lnL
+	 */
+	public double getLnL() {
+		return lnL;
+	}
+	
+	/**
+	 * @param lnL the lnL to set
+	 */
+	public void setLnL(double lnL) {
+		this.lnL = lnL;
+	}
+	
+	/**
+	 * @return the lnVL
+	 */
+	public double getLnVL() {
+		return lnVL;
+	}
+	
+	/**
+	 * @param lnVL the lnVL to set
+	 */
+	public void setLnVL(double lnVL) {
+		this.lnVL = lnVL;
+	}
+	
+	/**
+	 * @return the vS
+	 */
+	public double getVS() {
+		return VS;
+	}
+	
+	/**
+	 * @param vS the vS to set
+	 */
+	public void setVS(double vS) {
+		VS = vS;
+	}
+	
+	/**
+	 * @return the s
+	 */
+	public double getS() {
+		return S;
+	}
+	
+	/**
+	 * @param s the s to set
+	 */
+	public void setS(double s) {
+		S = s;
+	}
+	
+	/**
+	 * @return the m
+	 */
+	public double getM() {
+		return M;
+	}
+	
+	/**
+	 * @param m the m to set
+	 */
+	public void setM(double m) {
+		M = m;
+	}
+	
+	/**
+	 * @return the l
+	 */
+	public double getL() {
+		return L;
+	}
+	
+	/**
+	 * @param l the l to set
+	 */
+	public void setL(double l) {
+		L = l;
+	}
+	
+	/**
+	 * @return the vL
+	 */
+	public double getVL() {
+		return VL;
+	}
+	
+	/**
+	 * @param vL the vL to set
+	 */
+	public void setVL(double vL) {
+		VL = vL;
+	}	
 }
