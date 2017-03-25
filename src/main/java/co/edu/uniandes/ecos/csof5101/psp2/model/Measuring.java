@@ -1,6 +1,6 @@
 /**
  * Measuring.java
- * PSP Program 3
+ * PSP Program 4
  * Copyright (c) Universidad de los Andes.
  */
 package co.edu.uniandes.ecos.csof5101.psp2.model;

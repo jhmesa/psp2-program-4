@@ -1,6 +1,6 @@
 /**
  * Data.java
- * PSP Program 2
+ * PSP Program 4
  * Copyright (c) Universidad de los Andes.
  */
 package co.edu.uniandes.ecos.csof5101.psp2.model;

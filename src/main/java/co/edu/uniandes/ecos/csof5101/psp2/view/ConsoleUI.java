@@ -1,6 +1,6 @@
 /**
  * ConsoleUI.java
- * PSP Program 3
+ * PSP Program 4
  * Copyright (c) Universidad de los Andes.
  */
 
